@@ -75,5 +75,3 @@ namespace ModuloAPI.Controllers
         }
     }
 }
-
-//testes
