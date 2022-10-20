@@ -39,9 +39,7 @@ namespace ModuloAPI.Controllers
         public IActionResult ObterPorNome(string nome)
         {
             var contatos = _context.Contatos.Where(x => x.Nome.Contains(nome));
-            if(nome == null)
-                return NotFound();
-
+            
             return Ok(contatos);
         }
 
